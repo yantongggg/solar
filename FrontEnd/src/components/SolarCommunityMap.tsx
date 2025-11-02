@@ -64,9 +64,9 @@ const POTENTIAL_LEVELS: SolarPotentialLevel[] = [
   },
 ];
 
-// 🔥 HARDCODED DATA - Always show immediately
+// HARDCODED DATA
 const HARDCODED_INDICATOR = {
-  background: "rgba(255, 255, 255, 0.95)",  // 🔥 White background
+  background: "rgba(255, 255, 255, 0.95)",  
   stroke: "#ff6f00",
   glow: "rgba(255, 111, 0, 0.42)",
   dot: "#ff6f00",
@@ -88,7 +88,7 @@ export function SolarCommunityMap({
   const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
   const [locationError, setLocationError] = useState<string | null>(null);
   
-  const API_KEY = "AIzaSyDyXmXGx3ojAe1r2TXOMGJRaFZb9VCoUFU";
+  const API_KEY = " ";
   const polygonRef = useRef<google.maps.Polygon | null>(null);
   const glowPolygonRef = useRef<google.maps.Polygon | null>(null);
   const markersRef = useRef<google.maps.Marker[]>([]);
